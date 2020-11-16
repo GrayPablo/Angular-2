@@ -1,0 +1,13 @@
+
+<span>
+    <input
+        type="text"
+        [(ngModel)]="userName"
+        (input)="onUpdateUsername($event)">
+    <p>{{userName}}</p>
+</span>
+
+<span>
+    <button [disabled]="!buttonWorking"
+    (click)="resetNameVal()">Button Jenson</button>
+</span>
